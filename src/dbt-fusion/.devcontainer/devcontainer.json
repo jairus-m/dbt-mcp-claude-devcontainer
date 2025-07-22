@@ -95,7 +95,8 @@
       "installTools": true
     }
   },
-  "postStartCommand": "claude mcp add dbt-mcp -- uvx dbt-mcp && pre-commit install"
+  // After container is created, adds the dbt-mcp server to Claude
+  "postStartCommand": "claude mcp add dbt-mcp -- uvx dbt-mcp"
 }
 
 
