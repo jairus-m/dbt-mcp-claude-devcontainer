@@ -18,6 +18,7 @@
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
         "dbt.dbtPath": "/usr/local/bin/dbt",
+        "dbt.dbtPythonPathOverride": "/usr/local/bin/python3",
         "files.associations": {
           "*.sql": "jinja-sql",
           "*.yml": "jinja-yaml"
