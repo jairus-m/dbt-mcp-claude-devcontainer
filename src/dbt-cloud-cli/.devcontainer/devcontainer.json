@@ -20,6 +20,7 @@
         "dbt.dbtPath": "/usr/local/bin/dbt",
         "dbt.dbtPythonPathOverride": "/usr/local/bin/python3",
         "dbt.altimateAiKey": "${containerEnv:DBT_ALTIMATE_AI_KEY}",
+        "dbt.sqlFmtPath": "/usr/local/bin/sqlfmt",
         "files.associations": {
           "*.sql": "jinja-sql",
           "*.yml": "jinja-yaml"

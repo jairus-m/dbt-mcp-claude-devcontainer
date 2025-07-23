@@ -19,7 +19,7 @@ RUN pip install dbt --no-cache-dir --force-reinstall
 RUN pip install uv
 
 # Install tools using uv and ensure they're in PATH
-RUN uv pip install --system ruff pre-commit
+RUN uv pip install --system ruff pre-commit sqlfmt
 
 # Install Anthropic CLI globally
 RUN npm install -g @anthropic-ai/claude-code
