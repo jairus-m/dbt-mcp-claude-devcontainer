@@ -22,6 +22,7 @@ A development container template for local dbt setup (either Cloud CLI or Fusion
   - Proper configs in your local `~/.dbt` directory
 - A developer [PAT](https://docs.getdbt.com/docs/dbt-cloud-apis/user-tokens) from dbt Cloud 
 - [Anthropic API Credentials](https://docs.anthropic.com/en/docs/get-started)
+- For Cloud CLI that uses dbt Power User, you will need to provide an [Altimate AI API KEY](https://docs.myaltimate.com/setup/reqdConfigCloud/)
 
 ## Features
 This dev container will automatically:
@@ -43,7 +44,7 @@ Note: All tools and LLM’s are installed and scoped to the ephemeral dev contai
 2. Add the following to your project's `.devcontainer/devcontainer.env` file:
    - [Dev Container Environment Variables Needed for dbt MCP and Claude Code CLI](https://github.com/jairus-m/dbt-mcp-claude-devcontainer/blob/main/src/devcontainer-template.env)
    - Note:
-     - Refer to [dbt-mcp/README.md](https://github.com/dbt-labs/dbt-mcp/blob/main/README.md) for environment variable configuration
+     - Refer to [dbt-mcp/README.md](https://github.com/dbt-labs/dbt-mcp/blob/main/README.md) for environment variable configurations
      - Your Anthropic credentials enironment variables will depend on if you're using the defualt Anthropic base URL or a 3rd Party Proxy
 
 4. Confirm that you have the following in your projects root:
