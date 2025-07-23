@@ -34,7 +34,7 @@ This dev container will automatically:
 
 Note: All tools and LLM’s are installed and scoped to the ephemeral dev container itself and are completely isolated from your machine.
 
-## Usage
+## Setup Instructions
 
 1. Add the following to your project's `.devcontainer/devcontainer.json` file:
    - For Fusion: [dbt Fusion dev container JSON config](https://github.com/jairus-m/dbt-mcp-claude-devcontainer/blob/main/src/dbt-fusion/.devcontainer/devcontainer.json)
