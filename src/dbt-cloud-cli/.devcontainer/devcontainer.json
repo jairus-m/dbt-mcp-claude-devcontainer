@@ -14,13 +14,14 @@
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
-      // Set *default* container specific settings.json values on container create.
+      // Set default container specific settings.json values on container create.
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
         "dbt.dbtPath": "/usr/local/bin/dbt",
         "dbt.dbtPythonPathOverride": "/usr/local/bin/python3",
+        "dbt.dbtIntegration": "cloud",
         "dbt.altimateAiKey": "${containerEnv:DBT_ALTIMATE_AI_KEY}",
-        "dbt.sqlFmtPath": "/usr/local/bin/sqlfmt",
+        "dbt.sqlFmtPath": "/usr/local/python/current/bin/sqlfmt",
         "files.associations": {
           "*.sql": "jinja-sql",
           "*.yml": "jinja-yaml"
@@ -78,9 +79,9 @@
         "EditorConfig.EditorConfig",    // EditorConfig support
         "eamodio.gitlens",             // Enhanced Git capabilities
         "github.vscode-pull-request-github", // GitHub PR support
-        "visualstudioexptteam.vscodeintellicode", // AI-assisted IntelliSense
-        "innoverio.vscode-dbt-power-user",         // dbt PowerUser
-        "redhat.vscode-yaml"           // YAML support
+        "visualstudioexptteam.vscodeintellicode", // AI-assisted IntelliSense\
+        "redhat.vscode-yaml",           // YAML support
+        "innoverio.vscode-dbt-power-user"         // dbt PowerUser
       ]
     }
   },
@@ -97,5 +98,5 @@
     }
   },
   // After container is created, adds the dbt-mcp server to Claude
-  "postStartCommand": "claude mcp add dbt-mcp -- uvx dbt-mcp"
+  "postStartCommand": "claude mcp add dbt-mcp -- uvx dbt-mcp && pip install sqlfmt"
 }
