@@ -2,7 +2,7 @@
   // Base image configuration
   "name": "dbt-fusion-devcontainer",
   "image": "ghcr.io/jairus-m/dbt-mcp-claude-devcontainer/dbt-fusion:latest",
-  "remoteUser": "root",
+  "remoteUser": "vscode",
   "runArgs": ["--env-file=.devcontainer/devcontainer.env"],
   // Mount user's .dbt/.ssh folders to access profiles.yml and ssh keys
   "mounts": [
